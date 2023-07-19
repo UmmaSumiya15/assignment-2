@@ -26,7 +26,7 @@ box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
   font-size: 30px;
   font-weight: 700;
 }
-.nav-logo span{
+span{
   color: #FF42A5;
 }
 .nav-content ul{
@@ -137,16 +137,107 @@ box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
   margin-top: 20px;
 }
 
+/* online games section */
+
+.online-game{
+  margin: 100px 120px;
+}
+.online-game-content h2{
+  color: #0B0223;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+}
+.online-game-content span{
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.description{
+  color: #534C64;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  margin: 15px 0;
+}
+.card-container{
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  max-width: 100%;
+}
+.card-img{
+  width: 250px;
+  
+}
+.card-1{
+  padding: 10px;
+}
+.card{
+  padding: 10px;
+}
+.card-description{
+  text-align: left;
+}
+.card-img:hover{
+  border: 3px solid #F948B2;
+  border-radius: 14px;
+}
+
+/* Play instantly section */
+
+.instantly-section{
+  margin: 0 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.instantly-content{
+  width: 40%;
+  text-align: right;
+  padding: 0 50px;
+
+}
+.instantly-img{
+  width: 40%;
+  margin: 0 30px;
+
+}
+.big-pic img{
+  width: 90%;
+  margin-left: 50px;
+}
+.small-pic img{
+  width: 180px;
+  /* position: relative; */
+  margin: -140px -150px 0 0;
+}
+.instantly-content h2{
+
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 50px; /* 125% */
+}
+
+
+
 /* responsive */
 /* mobile device */
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:767px) {
+  body{
+    max-width: 100%;
+  }
   .nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px 0;
-    margin: 30px 50px 0;
+    margin-bottom: 30px;
   }
 
   .nav-logo img{
@@ -168,9 +259,8 @@ box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
   }
   .banner-content{
     width: 100%;
-    height: 100%;
-    background-size: 100vh;
-    margin: 0;
+    background-size: contain;
+    margin: 0 auto;
     padding: 70px;
     gap: 10px;
 
@@ -199,17 +289,71 @@ box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     font-size: 12px;
     border-radius: 30px;
   }
+  .online-game-content h2{
+    font-size: 26px;
+    text-align: center;
+    /* margin-bottom: 10px;
+    width: 300px; */
+  }
+  .description{
+    margin-bottom: 15px;
+    font-size: 15px;
+    /* width: 300px; */
+  }
+  .online-game{
+    margin: 60px 40px ;
+  }
+  .card-container{
+    flex-direction: column;
+  }
+  .card{
+    text-align: center;
+  }
+  .card-description{
+    text-align: center;
+  }
+  /* instant section */
 
+  .instantly-section{
+    margin: 40px;
+    flex-direction: column;
+    gap: 40px;
+  
+  }
+  .instantly-content{
+    width: 100%;
+    text-align: center;
+    padding: 0 5px;
+  }
+  .instantly-img{
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+  }
+  .big-pic img{
+    width: 90%;
+    margin-left: 60px;
+    
+  }
+  .small-pic{
+    width: 100px;
+    position: relative;
+    right: 10px;
+  }
+  .instantly-content h2{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+}
 }
 
-/* for tablet */
-
-@media screen and (min-width:425px) and (max-width:768px) {
+@media screen and (min-width:768px) and (max-width:1024px) {
   .nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin-bottom: 30px;
   }
   .nav-logo{
     padding-top: 40px;
@@ -239,9 +383,9 @@ box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 
   }
   .banner-img{
-    width: 80%;
+    width: 50%;
     padding: 10px;
-    margin: 0 60px;
+    margin-right: 0 80px;
 
   }
   .banner-title{
@@ -263,5 +407,48 @@ box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     font-size: 12px;
     border-radius: 30px;
   }
+  .online-game{
+    margin: 60px 45px ;
+  }
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  
+  }
+  .card{
+    margin-left: 20px;
+  }
 
+  /* instant section */
+  .instantly-section{
+    margin: 40px;
+    flex-direction: column;
+    gap: 40px;
+  
+  }
+  .instantly-content{
+    width: 100%;
+    text-align: center;
+    padding: 0 5px;
+  }
+  .instantly-img{
+    width: 85%;
+    margin-left: 0;
+    padding: 0;
+  }
+  .big-pic img{
+    width: 80%;
+    margin-left: 120px;
+    
+  }
+  .small-pic img{
+    width: 200px;
+    position: relative;
+    right: 0px;
+  }
+  .instantly-content h2{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+}
 }
