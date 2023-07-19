@@ -186,6 +186,44 @@ span{
   border-radius: 14px;
 }
 
+/* overly effect */
+.overly-container{
+
+  position: relative;
+  display: inline-block;
+
+}
+.overly{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  background: rgba(53, 52, 52, 0.836);
+  cursor: pointer;
+
+}
+.content{
+  position: absolute;
+  top: 40%;
+  left: 30%;
+ text-align: center;
+ transform: translate(-50% -50%);
+ color: #F948B2;
+ font-weight: 700;
+}
+.fa-circle-play{
+  font-size: 30px;
+
+}
+.overly-container:hover .overly{
+  opacity: 0.8;
+  border: 4px solid #f53fac;
+  border-radius: 10px;
+}
+
 /* Play instantly section */
 
 .instantly-section{
