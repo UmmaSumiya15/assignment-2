@@ -448,15 +448,22 @@ footer{
 }
 /* footer */
 .footer-section{
-  padding: 70px 20px;
-  gap: 20px;
-  width: 90%;
+ 
 }
 .f-description, .f-icon, .f-policy{
   gap: 26px;
 }
 .f-description{
   font-size: 10px;
+  display: grid;
+  grid-template-columns:  2fr 1fr 2fr ;
+  justify-content: center;
+  align-items: center;
+}
+.f-policy{
+  display: grid;
+  grid-template-columns:1fr 1fr ;
+  padding: 0;
 }
 .f-desc{
   font-size: 10px;
